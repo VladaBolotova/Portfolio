@@ -47,7 +47,7 @@ export const Banner = () => {
                 </span>
                 <h1>{`Hi i am Vlada `}<span className="wrap">{text}</span></h1>
                 <p>I am a web developer with passion of creating a beautiful web sites.</p>
-                <button onClick={() => console.log('connect')}>Lets connect<ArrowRightCircle size={25}/> </button>
+                <button onClick={() => console.log('connect')}>Let's connect<ArrowRightCircle size={25}/> </button>
             </Col>
             <Col xs={12} md={6} xl={5}>
                 <img src={headerImg} alt="Header img"></img>
