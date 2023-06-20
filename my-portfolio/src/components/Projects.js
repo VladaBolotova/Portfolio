@@ -31,18 +31,18 @@ export const Projects = () => {
             <Row>
                 <Col>
                 <h2 class="text-center">Projects</h2>
-                <p></p>
+                <p class="text-center">Here are a few past design projects I've worked on.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                 <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
       <Nav.Item>
         <Nav.Link eventKey="first">Tab one</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+        <Nav.Link eventKey="second">Tab two</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link eventKey="third" third>
-          Tab 3
+          Tab three
         </Nav.Link>
       </Nav.Item>
     </Nav>
@@ -61,10 +61,10 @@ export const Projects = () => {
             </Row>
         </Tab.Pane>
         <Tab.Pane eventKey="second">
-            Vlada
+           Coming soon...
         </Tab.Pane>
         <Tab.Pane eventKey="third">
-           Vlada
+          Coming soon...
         </Tab.Pane>
         
     </Tab.Content>
