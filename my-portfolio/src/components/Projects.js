@@ -1,40 +1,39 @@
-import {Container, Row, Col } from "react-bootstrap";
- import Nav from 'react-bootstrap/Nav';
+import {Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { ProjectCard } from "./ProjectCard";
+
+
+ import proj1 from "../assets/img/project-img1.png"
 
 
 export const Projects = () => {
 
     const projects = [
 {
-    title: "",
-    description: "",
-    imgUrl: "",
+    title: "Weather App",
+    description: "Development",
+    imgUrl: proj1,
 },
 {
-    title: "",
-    description: "",
-    imgUrl: "",
+    title: "Movie App",
+    description: "Design",
+    imgUrl: proj1,
 },
 {
-    title: "",
-    description: "",
-    imgUrl: "",
+    title: "Fitness App",
+    description: "Wellness & Life",
+    imgUrl: proj1,
 },
-{
-    title: "",
-    description: "",
-    imgUrl: "",
-},
+
     ]
     return (
     <section className="projects" id="projects">
         <Container>
             <Row>
                 <Col>
-                <h2>Projects</h2>
-                <p>AHDBCAJHEBCDJSHEDBCJHEBDCJHHEBDCJWDEBCJBEDJFBCJEFDSAKJE</p>
+                <h2 class="text-center">Projects</h2>
+                <p></p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                <Nav variant="pills" defaultActiveKey="/home">
+                <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
       <Nav.Item>
         <Nav.Link eventKey="first">Tab one</Nav.Link>
       </Nav.Item>
@@ -53,33 +52,19 @@ export const Projects = () => {
                 {
                 projects.map((projects, index) => {
                     return (
-                        <p>{projects.title}</p>
+                      <ProjectCard
+                      key={index}
+                      {...projects}/>
                     )
                 })
                 }
             </Row>
         </Tab.Pane>
         <Tab.Pane eventKey="second">
-            <Row>
-                {
-                projects.map((projects, index) => {
-                    return (
-                        <p>{projects.title}</p>
-                    )
-                })
-                }
-            </Row>
+            Vlada
         </Tab.Pane>
         <Tab.Pane eventKey="third">
-            <Row>
-                {
-                projects.map((projects, index) => {
-                    return (
-                        <p>{projects.title}</p>
-                    )
-                })
-                }
-            </Row>
+           Vlada
         </Tab.Pane>
         
     </Tab.Content>
@@ -88,6 +73,7 @@ export const Projects = () => {
                 </Col>
             </Row>
         </Container>
+      
 
     </section>
     )
