@@ -2,26 +2,28 @@ import {Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 
 
- import proj1 from "../assets/img/project-img1.png"
+ import proj1 from "../assets/img/s.png"
+ import proj2 from "../assets/img/movie.png"
+ import proj3 from "../assets/img/fitness.png"
 
 
 export const Projects = () => {
 
     const projects = [
 {
-    title: "Weather App",
-    description: "Development",
+    title: "Travelr",
     imgUrl: proj1,
+    link: "https://github.com/JaredSchips/travelr"
 },
 {
     title: "Movie App",
-    description: "Design",
-    imgUrl: proj1,
+    imgUrl: proj2,
+    link: "https://github.com/VladaBolotova/Movie-App"
 },
 {
     title: "Fitness App",
-    description: "Wellness & Life",
-    imgUrl: proj1,
+    imgUrl: proj3,
+    link: "https://github.com/VladaBolotova/Fitness-Tracker"
 },
 
     ]
